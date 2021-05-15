@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  color: burlywood;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+
+  margin: 10px;
+  /* background-color: darkgray; */
+}
+.component {
+  background: linear-gradient(70deg, rgba(128, 128, 128, 0.8), black);
+  font-size: 1.2rem;
+  /* grid-area: auto; */
+}
+.Q-A {
+  padding: 10px;
+}
+
+.frame,
+.javaProgram {
+  display: grid;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+  height: 10vh;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  background: linear-gradient(
+    70deg,
+    rgba(0, 0, 255, 0.7),
+    rgba(255, 192, 203, 0.7)
+  );
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Q-A {
+  color: lawngreen;
+}
+.Q {
+  color: cyan;
+  font-weight: bolder;
+}
+
+ul,
+ol {
+  padding-left: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .component {
+    overflow: auto;
+    height: 400px;
+    /* grid-area: unset; */
+  }
+}
